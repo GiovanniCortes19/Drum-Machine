@@ -7,7 +7,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color:rgba(59, 59, 59, 0.711);
+  background-color:rgba(60, 60, 60, 0.711);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,6 +22,7 @@
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  color: white;
 }
 
 body {

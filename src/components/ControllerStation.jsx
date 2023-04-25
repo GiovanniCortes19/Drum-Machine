@@ -10,7 +10,11 @@ const ControllerStation = () => {
             </div>
         </div>
         <h2 id='display'>Testing</h2>
-        <div className='volumeControl'>volume</div>
+        <div className='volumeControl'>
+            <p>volume</p>
+            <label for="customRange1"></label>
+            <input type="range" class="custom-range" id="customRange1"></input>
+        </div>
     </div>
   )
 }
