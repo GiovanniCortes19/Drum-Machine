@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import SoundBoard from './components/SoundBoard'
 import SoundKey from './components/SoundKey'
 
 function App() {
@@ -8,8 +9,8 @@ function App() {
     <div id='drum-machine'>
       <h1>Drum Machine</h1>
       <div id='display' className='drumBox-container'>
-        {/* <div>SoundBoard</div> */}
-        <SoundKey/>
+        <SoundBoard/>
+        {/* <SoundKey/> */}
         <div>ControllerStation</div>
       </div>
     </div>

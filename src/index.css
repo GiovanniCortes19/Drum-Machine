@@ -46,6 +46,7 @@ body {
   width: 70%;
   border: 2px solid blueviolet;
   padding: 20px;
+  background-color: rgba(255, 255, 255, 0.662);
 }
 
 .drum-pad {
@@ -53,7 +54,7 @@ body {
   align-items: center;
   justify-content: center;
   border: 2px solid goldenrod;
-  background-color: rgba(0, 0, 0, 0.518);
+  background-color: rgba(0, 0, 0, 0.807);
   border-radius: 50%;
   padding: 10px;
   width: 4em;
@@ -61,3 +62,9 @@ body {
   cursor: pointer;
 }
 
+.soundBoard {
+  display: grid;
+  grid-template: auto auto / auto auto auto;
+  margin: 0;
+  gap: 10px;
+}
