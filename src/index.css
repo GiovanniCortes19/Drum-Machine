@@ -45,4 +45,19 @@ body {
   justify-content: space-around;
   width: 70%;
   border: 2px solid blueviolet;
+  padding: 20px;
 }
+
+.drum-pad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid goldenrod;
+  background-color: rgba(0, 0, 0, 0.518);
+  border-radius: 50%;
+  padding: 10px;
+  width: 4em;
+  height: 4em;
+  cursor: pointer;
+}
+
