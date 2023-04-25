@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div id='drum-machine'>
-      <h1>Drum Machine</h1>
+      <h1 className='title'>Drum Machine</h1>
       <div id='display' className='drumBox-container'>
         <SoundBoard/>
         {/* <SoundKey/> */}
