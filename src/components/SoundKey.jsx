@@ -1,9 +1,10 @@
 import React from 'react'
 
-const SoundKey = () => {
+const SoundKey = (props) => {
   return (
-    <div className='drum-pad' id='sound-key'>
-        <h3>Key</h3>
+    <div className='drum-pad' id={props.name}>
+        <h3>{props.keyID}</h3>
+        <audio src={props.audio} className='clip' id={keyID}></audio>
     </div>
   )
 }
