@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ControllerStation = () => {
+const ControllerStation = (props) => {
   return (
     <div className='controllerStation'>
         <div className="power">
@@ -9,7 +9,7 @@ const ControllerStation = () => {
                 <div className="flicker"></div>
             </div>
         </div>
-        <h2 id='display'>Testing</h2>
+        <h2 id='display'>{props.display}</h2>
         <div className='volumeControl'>
             <p>volume</p>
             <label htmlFor="customRange1"></label>
