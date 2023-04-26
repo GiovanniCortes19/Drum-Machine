@@ -12,8 +12,8 @@ const ControllerStation = () => {
         <h2 id='display'>Testing</h2>
         <div className='volumeControl'>
             <p>volume</p>
-            <label for="customRange1"></label>
-            <input type="range" class="custom-range" id="customRange1"></input>
+            <label htmlFor="customRange1"></label>
+            <input type="range" className="form-range volRange" id="customRange1"></input>
         </div>
     </div>
   )
