@@ -5,10 +5,11 @@ const SoundKey = (props) => {
   React.useEffect(()=>{
     document.addEventListener('keydown', handleKeyPress);
     return () => {document.removeEventListener('keydown', handleKeyPress)}
-  },[])
+  },[props.powerOn, props.volume])
 
   const handleKeyPress = (event) => {
-    if (event.keyCode === props.keyCode) {
+    if (event.keyCode === props.keyCode && props.powerOn) {
+      document.getElementById(props.keyID).volume = props.volume;
       props.play()
     }
   }
