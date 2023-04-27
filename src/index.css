@@ -38,8 +38,8 @@ body {
   text-shadow: 5px 5px 5px black;
   font-size: 3em;
   border: 8px double goldenrod;
-  padding-left: 50px;
-  padding-right: 50px;
+  border-radius: 5px 20px;
+  padding: 10px 50px;
 }
 
 #drum-machine {
@@ -75,7 +75,8 @@ body {
   width: 4.8em;
   height: 4.8em;
   cursor: pointer;
-  font-family: 'Arial Narrow Bold', sans-serif;
+  font-family: 'Bruno Ace', cursive;
+
 }
 
 .drum-pad:hover{
@@ -127,7 +128,7 @@ body {
 }
 
 #display {
-  background-color: rgba(240, 248, 255, 0.83);
+  background-color: rgba(255, 252, 240, 0.692);
   color: black;
   padding-top: 10px;
   border-radius: 5px;
