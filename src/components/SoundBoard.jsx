@@ -7,14 +7,22 @@ const SoundBoard = () => {
 
     const [display, setDisplay] = React.useState('example')
     const [powerOn, setPowerOn] = React.useState(true)
+    const [volume, setVolume] = React.useState(1)
 
     function playSound (keyID, name) {
-        if (powerOn) {document.getElementById(keyID).play();
-        setDisplay(prev => name)}
+        const audioTag = document.getElementById(keyID)
+        if (powerOn) {
+            audioTag.play();
+            setDisplay(prev => name)
+    }
     }
 
     function togglePower (){
         setPowerOn(prev => !prev)
+    }
+
+    function volumeChange(event){
+        setVolume(event.target.value)
     }
 
     const drumPads = sounds.map(sound => (
@@ -25,6 +33,7 @@ const SoundBoard = () => {
             name={sound.name}
             play={()=>playSound(sound.keyID, sound.name)}
             powerOn={powerOn}
+            volume={volume}
         />
     ))
 
@@ -33,7 +42,13 @@ const SoundBoard = () => {
         <div className='soundBoard'>
             {drumPads}
         </div>
-        <ControllerStation display={display} powerOn={powerOn} togglePower={()=>togglePower()}/>
+        <ControllerStation
+         display={display} 
+         powerOn={powerOn} 
+         volume={volume} 
+         togglePower={()=>togglePower()}
+         volumeChange={volumeChange}
+         />
     </>
   )
 }

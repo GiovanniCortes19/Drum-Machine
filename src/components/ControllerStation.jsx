@@ -13,7 +13,7 @@ const ControllerStation = (props) => {
         <div className='volumeControl'>
             <p>volume</p>
             <label htmlFor="customRange1"></label>
-            <input type="range" className="form-range volRange" id="customRange1"></input>
+            <input type="range" className="form-range volRange" id="customRange1" step={0.01} max={1} min={0} value={props.volume} onChange={props.volumeChange}></input>
         </div>
     </div>
   )

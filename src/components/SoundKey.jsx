@@ -5,7 +5,9 @@ const SoundKey = (props) => {
 
 
   return (
-    <div className={props.powerOn ? 'drum-pad' : 'drum-padOff'} id={props.name} onClick={()=>{props.play()}}>
+    <div className={props.powerOn ? 'drum-pad' : 'drum-padOff'} id={props.name} onClick={()=>{
+      document.getElementById(props.keyID).volume = props.volume;
+      props.play()}}>
         <h3>{props.keyID}</h3>
         <audio src={props.audio} className='clip' id={props.keyID}></audio>
     </div>
