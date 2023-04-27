@@ -9,7 +9,7 @@ const ControllerStation = (props) => {
                 <div className="flicker"></div>
             </div>
         </div>
-        <h2 id='display'>{props.display}</h2>
+        <h2 id={props.powerOn ? 'display' : 'displayOff'}>{props.display}</h2>
         <div className='volumeControl'>
             <p>volume</p>
             <label htmlFor="customRange1"></label>

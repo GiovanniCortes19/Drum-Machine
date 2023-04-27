@@ -24,6 +24,7 @@ const SoundBoard = () => {
             keyID={sound.keyID}
             name={sound.name}
             play={()=>playSound(sound.keyID, sound.name)}
+            powerOn={powerOn}
         />
     ))
 

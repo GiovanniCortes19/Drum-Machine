@@ -78,6 +78,19 @@ body {
   font-family: 'Bruno Ace', cursive;
 
 }
+.drum-padOff {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px double rgba(218, 165, 32, 0.379);
+  background-color: rgba(59, 59, 59, 0.711);
+  border-radius: 50%;
+  width: 4.8em;
+  height: 4.8em;
+  cursor: pointer;
+  font-family: 'Bruno Ace', cursive;
+
+}
 
 .drum-pad:hover{
   background-color: rgba(218, 165, 32, 0.809);
@@ -142,6 +155,18 @@ body {
 
 #display {
   background-color: rgba(255, 252, 240, 0.692);
+  color: black;
+  padding-top: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 30px;
+  width: 8.5em;
+  height: 2em;
+  text-align: center;
+  font-family: 'Bruno Ace', cursive;
+}
+#displayOff {
+  background-color: rgba(255, 252, 240, 0.363);
   color: black;
   padding-top: 10px;
   border-radius: 5px;
