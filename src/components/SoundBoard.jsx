@@ -12,6 +12,7 @@ const SoundBoard = () => {
     function playSound (keyID, name) {
         const audioTag = document.getElementById(keyID)
         if (powerOn) {
+            audioTag.currentTime = 0;
             audioTag.play();
             setDisplay(prev => name)
     }
