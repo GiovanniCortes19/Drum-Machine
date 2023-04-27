@@ -110,7 +110,20 @@ body {
   margin-top: -5px;
 }
 
-.btn-power {
+.btn-powerOff {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(255, 255, 255, 0.804);
+  border-radius: 15px;
+  width: 80px;
+  height: 30px;
+  padding: 3px;
+  cursor: pointer;
+  margin-top: -5px;
+}
+.btn-powerOn {
+  display: flex;
+  justify-content: flex-start;
   background-color: rgba(255, 255, 255, 0.804);
   border-radius: 15px;
   width: 80px;

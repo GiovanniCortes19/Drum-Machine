@@ -11,7 +11,6 @@ function App() {
       <h1 className='title'>Drum Machine</h1>
       <div id='drumBox' className='drumBox-container'>
         <SoundBoard/>
-        {/* <ControllerStation/> */}
       </div>
     </div>
   )

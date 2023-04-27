@@ -5,7 +5,7 @@ const ControllerStation = (props) => {
     <div className='controllerStation'>
         <div className="power">
             <p>POWER</p>
-            <div className="btn-power">
+            <div className={props.powerOn ? `btn-powerOn` : `btn-powerOff`} onClick={props.togglePower}>
                 <div className="flicker"></div>
             </div>
         </div>

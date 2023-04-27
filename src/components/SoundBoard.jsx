@@ -6,10 +6,15 @@ import sounds from './sounds'
 const SoundBoard = () => {
 
     const [display, setDisplay] = React.useState('example')
+    const [powerOn, setPowerOn] = React.useState(true)
 
     function playSound (keyID, name) {
-        document.getElementById(keyID).play();
-        setDisplay(prev => name)
+        if (powerOn) {document.getElementById(keyID).play();
+        setDisplay(prev => name)}
+    }
+
+    function togglePower (){
+        setPowerOn(prev => !prev)
     }
 
     const drumPads = sounds.map(sound => (
@@ -27,7 +32,7 @@ const SoundBoard = () => {
         <div className='soundBoard'>
             {drumPads}
         </div>
-        <ControllerStation display={display}/>
+        <ControllerStation display={display} powerOn={powerOn} togglePower={()=>togglePower()}/>
     </>
   )
 }
