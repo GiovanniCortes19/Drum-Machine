@@ -7,8 +7,9 @@ const SoundBoard = () => {
 
     const [display, setDisplay] = React.useState('example')
 
-    function playSound (keyID) {
-        document.getElementById(keyID).play()
+    function playSound (keyID, name) {
+        document.getElementById(keyID).play();
+        setDisplay(prev => name)
     }
 
     const drumPads = sounds.map(sound => (
@@ -17,7 +18,7 @@ const SoundBoard = () => {
             audio={sound.audio}
             keyID={sound.keyID}
             name={sound.name}
-            play={()=>playSound(sound.keyID)}
+            play={()=>playSound(sound.keyID, sound.name)}
         />
     ))
 
